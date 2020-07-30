@@ -31,7 +31,7 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = 'https://db-cafsflix.herokuapp.com/categorias';
     fetch(URL).then(async (response) => {
       const responseJson = await response.json();
       setCategorias([
