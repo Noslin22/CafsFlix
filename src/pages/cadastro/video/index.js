@@ -45,7 +45,7 @@ function CadastroVideo() {
           onChange={handleChange}
         />
 
-        <Button type="submit">
+        <Button to="/" type="submit">
           Cadastrar
         </Button>
       </form>
