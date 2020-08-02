@@ -1,9 +1,9 @@
-/* eslint-disable no-console */
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from 'react';
 import Page from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
@@ -14,24 +14,12 @@ function CadastroCategoria() {
     cor: '#000000',
   };
 
-  const [valores, setValores] = useState(valoresIniciais);
-
-  function setValor(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(info) {
-    setValor(
-      info.target.getAttribute('name'),
-      info.target.value,
-    );
-  }
+  const { valores, handleChange, clearForm } = useForm(valoresIniciais);
 
   useEffect(() => {
-    const URL = 'https://db-cafsflix.herokuapp.com/categorias';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://db-cafsflix.herokuapp.com/categorias';
     fetch(URL).then(async (response) => {
       const responseJson = await response.json();
       setCategorias([
@@ -54,7 +42,7 @@ function CadastroCategoria() {
           valores,
         ]);
 
-        setValores(valoresIniciais);
+        clearForm();
       }}
       >
         <FormField
