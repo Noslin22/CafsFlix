@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import Page from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
-import { ButtonDelete } from '../../../components/Button';
+import Button, { ButtonWrapper, ButtonDelete } from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
 import categoriesRepository from '../../../repositories/categorias';
 
@@ -78,17 +78,19 @@ function CadastroVideo() {
           name="id"
           onChange={handleChange}
         />
-        <ButtonDelete onClick={submit} type="submit">
-          Cadastrar Vídeo
-        </ButtonDelete>
+        <ButtonWrapper>
+          <Button onClick={submit} type="submit">
+            Novo Vídeo
+          </Button>
 
-        <ButtonDelete onClick={deleteVideo} type="delete">
-          Deletar Vídeo
-        </ButtonDelete>
+          <ButtonDelete onClick={deleteVideo} type="delete">
+            Deletar Vídeo
+          </ButtonDelete>
 
-        <ButtonDelete to="/cadastro/categoria">
-          Cadastrar Categoria
-        </ButtonDelete>
+          <Button to="/cadastro/categoria">
+            Nova Categoria
+          </Button>
+        </ButtonWrapper>
       </form>
     </Page>
   );
