@@ -15,12 +15,13 @@ function CadastroVideo() {
   });
 
   function submit() {
-    videosRepository.create({
+    videosRepository.createVideo({
       nome: valores.nome,
       url: valores.url,
       categoriaId: 1,
+    }).then(() => {
+      history.push('/');
     });
-    history.push('/');
   }
 
   return (
@@ -29,11 +30,7 @@ function CadastroVideo() {
         Cadastro de Video
       </h1>
 
-      <form onSubmit={(event) => {
-        event.preventDefault();
-        submit()
-      }}
-      >
+      <form>
         <FormField
           label="Nome do Vídeo"
           value={valores.nome}
