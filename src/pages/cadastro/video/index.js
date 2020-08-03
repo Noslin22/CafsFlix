@@ -1,25 +1,44 @@
-import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import Page from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
-import Button from '../../../components/Button';
+import { ButtonDelete } from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
+import categoriesRepository from '../../../repositories/categorias';
 
 function CadastroVideo() {
   const history = useHistory();
-  const { valores, handleChange } = useForm({
-    nome: 'Vídeo padrão',
-    url: 'https://www.youtube.com/watch?v=kO1XALdcp_4',
-    categoria: 'Front-End',
+  const [categorias, setCategorias] = useState([]);
+  const categoryName = categorias.map(({ nome }) => nome);
+  const { valores, handleChange, clearForm } = useForm({
+    nome: '',
+    url: '',
+    categoria: '',
   });
+  useEffect(() => {
+    categoriesRepository.getAll().then((categoriasServer) => {
+      setCategorias(categoriasServer);
+    });
+  }, []);
+
+  const categoriaEscolhida = categorias.find((categoria) => categoria.nome === valores.categoria);
 
   function submit() {
     videosRepository.createVideo({
       nome: valores.nome,
       url: valores.url,
-      categoriaId: 1,
+      categoriaId: categoriaEscolhida.id,
     }).then(() => {
+      history.push('/');
+    });
+  }
+
+  function deleteVideo() {
+    videosRepository.deleteVideo(
+      valores.id,
+    ).then(() => {
+      clearForm();
       history.push('/');
     });
   }
@@ -50,13 +69,27 @@ function CadastroVideo() {
           value={valores.categoria}
           name="categoria"
           onChange={handleChange}
+          suggestions={categoryName}
         />
-        <Button onClick={submit} type="submit">
-          Cadastrar
-        </Button>
-      </form>
 
-      <Link to="/cadastro/categoria">Cadastrar Categoria</Link>
+        <FormField
+          label="Id"
+          value={valores.id}
+          name="id"
+          onChange={handleChange}
+        />
+        <ButtonDelete onClick={submit} type="submit">
+          Cadastrar Vídeo
+        </ButtonDelete>
+
+        <ButtonDelete onClick={deleteVideo} type="delete">
+          Deletar Vídeo
+        </ButtonDelete>
+
+        <ButtonDelete to="/cadastro/categoria">
+          Cadastrar Categoria
+        </ButtonDelete>
+      </form>
     </Page>
   );
 }

@@ -46,14 +46,14 @@
     {
       "id": 1,
       "categoriaId": 1,
-      "nome": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "nome": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
     },
     {
       "id": 2,
       "categoriaId": 1,
-      "nome": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "nome": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
     },
     {
       "id": 3,
@@ -192,18 +192,6 @@
       "categoriaId": 5,
       "nome": "Terraria",
       "url": "https://www.youtube.com/watch?v=w7uOhFTrrq0"
-    },
-    {
-      "nome": "Vídeo padrão",
-      "url": "https://www.youtube.com/watch?v=kO1XALdcp_4",
-      "categoriaId": 1,
-      "id": 26
-    },
-    {
-      "nome": "Teste 3",
-      "url": "https://www.youtube.com/watch?v=MmB9b5njVbA",
-      "categoriaId": 1,
-      "id": 27
     }
   ]
 }

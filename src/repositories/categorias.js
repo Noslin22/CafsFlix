@@ -15,6 +15,20 @@ function getWithVideos() {
   });
 }
 
+function getAll() {
+  // eslint-disable-next-line no-undef
+  return fetch(`${CATEGORIES_URL}`).then(async (response) => {
+    if (response.ok) {
+      const responseJson = await response.json();
+
+      return responseJson;
+    }
+
+    throw new Error('Não foi possivel pegar os dados :(');
+  });
+}
+
 export default {
   getWithVideos,
+  getAll,
 };

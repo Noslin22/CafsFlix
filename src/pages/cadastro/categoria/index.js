@@ -16,6 +16,14 @@ function CadastroCategoria() {
 
   const { valores, handleChange, clearForm } = useForm(valoresIniciais);
 
+  function submit() {
+    setCategorias([
+      ...categorias,
+      valores,
+    ]);
+    clearForm();
+  }
+
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
@@ -35,16 +43,7 @@ function CadastroCategoria() {
         {valores.nome}
       </h1>
 
-      <form onSubmit={function handleSubmit(infosEvento) {
-        infosEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          valores,
-        ]);
-
-        clearForm();
-      }}
-      >
+      <form>
         <FormField
           label="Nome da Categoria"
           value={valores.nome}
@@ -65,7 +64,7 @@ function CadastroCategoria() {
           name="cor"
           onChange={handleChange}
         />
-        <Button>
+        <Button onClick={submit} type="submit">
           Cadastrar
         </Button>
       </form>
