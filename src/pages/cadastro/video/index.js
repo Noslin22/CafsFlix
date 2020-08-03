@@ -4,6 +4,7 @@ import Page from '../../../components/pageDefault';
 import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
 import Button from '../../../components/Button';
+import videosRepository from '../../../repositories/videos';
 
 function CadastroVideo() {
   const history = useHistory();
@@ -13,6 +14,15 @@ function CadastroVideo() {
     categoria: 'Front-End',
   });
 
+  function submit() {
+    videosRepository.create({
+      nome: valores.nome,
+      url: valores.url,
+      categoriaId: 1,
+    });
+    history.push('/');
+  }
+
   return (
     <Page>
       <h1>
@@ -21,7 +31,7 @@ function CadastroVideo() {
 
       <form onSubmit={(event) => {
         event.preventDefault();
-        history.push('/');
+        submit()
       }}
       >
         <FormField
@@ -44,8 +54,7 @@ function CadastroVideo() {
           name="categoria"
           onChange={handleChange}
         />
-
-        <Button to="/" type="submit">
+        <Button onClick={submit} type="submit">
           Cadastrar
         </Button>
       </form>
