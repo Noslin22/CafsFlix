@@ -7,7 +7,8 @@
       "link_extra": {
         "text": "Formação de Front End na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      },
+      "descricao": "Formação de Front End na Alura"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "link_extra": {
         "text": "Cursos de Back End na Alura",
         "url": "https://www.alura.com.br/cursos-online-programacao"
-      }
+      },
+      "descricao": "Cursos de Back End na Alura"
     },
     {
       "id": 3,
@@ -25,21 +27,26 @@
       "link_extra": {
         "text": "Cursos de Data Science na Alura",
         "url": "https://www.alura.com.br/cursos-online-mobile"
-      }
+      },
+      "descricao": "Cursos de Data Science na Alura"
     },
     {
       "id": 4,
       "nome": "Filmes",
-      "cor": "orange"
+      "cor": "orange",
+      "link_extra": {
+        "text": "Filmes Top"
+      },
+      "descricao": "Filmes Top"
     },
     {
       "id": 5,
       "nome": "Games",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+        "text": "Games awesomes"
+      },
+      "descricao": "Games awesomes"
     }
   ],
   "videos": [
@@ -186,12 +193,6 @@
       "categoriaId": 5,
       "nome": "Resident Evil 8",
       "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-    },
-    {
-      "id": 25,
-      "categoriaId": 5,
-      "nome": "Terraria",
-      "url": "https://www.youtube.com/watch?v=w7uOhFTrrq0"
     }
   ]
 }

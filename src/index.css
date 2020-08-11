@@ -12,7 +12,8 @@
   --white: #FFFFFF;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
-  --teste: #9dbc3e;
+  --grayDark: #141414;
+  --blueDark: #0c0147;
 }
 
 html,
@@ -23,6 +24,14 @@ body {
 
 a {
   color: inherit;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show-flex {
+  display: flex !important;
 }
 
 #root{

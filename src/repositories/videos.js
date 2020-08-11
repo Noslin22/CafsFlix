@@ -2,25 +2,27 @@ import config from '../config';
 
 const VIDEOS_URL = `${config.URL_BACKEND}/videos`;
 
-function deleteVideo(idVideo) {
+function deleteVideo(id) {
   // eslint-disable-next-line no-undef
-  return fetch(`${VIDEOS_URL}/${idVideo}`, {
+  return fetch(`${VIDEOS_URL}/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-type': 'application/json',
     },
-  }).then(async (response) => {
-    if (response.ok) {
-      const responseJson = await response.json();
+    // body: JSON.stringify(objetoDoVideo),
+    // method: 'DELETE',
+  })
+    .then(async (firstResponse) => {
+      if (firstResponse.ok) {
+        const responseParsed = await firstResponse.json();
+        return responseParsed;
+      }
 
-      return responseJson;
-    }
-
-    throw new Error('Não foi possivel pegar os dados :(');
-  });
+      throw new Error('Não foi possível apagar os dados :(');
+    });
 }
 
-function createVideo(video) {
+function create(video) {
   // eslint-disable-next-line no-undef
   return fetch(`${VIDEOS_URL}?_embed=videos`, {
     method: 'POST',
@@ -38,8 +40,21 @@ function createVideo(video) {
     throw new Error('Não foi possivel pegar os dados :(');
   });
 }
+function getAll() {
+  // eslint-disable-next-line no-undef
+  return fetch(`${VIDEOS_URL}`).then(async (response) => {
+    if (response.ok) {
+      const responseJson = await response.json();
+
+      return responseJson;
+    }
+
+    throw new Error('Não foi possivel pegar os dados :(');
+  });
+}
 
 export default {
-  createVideo,
+  create,
   deleteVideo,
+  getAll,
 };
