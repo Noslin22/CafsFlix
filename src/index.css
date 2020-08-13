@@ -28,6 +28,19 @@ body {
   padding: 0;
 }
 
+.App {
+  width: 800px;
+  margin: 30px;
+}
+
+.cb-centermode {
+  margin-bottom: 20px;
+  display: block;
+}
+.cb-centermode input {
+  margin-right: 7px;
+}
+
 a {
   color: inherit;
 }
