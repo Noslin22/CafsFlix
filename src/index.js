@@ -10,6 +10,7 @@ import Home from './pages/home/App';
 
 import CadastroVideo from './pages/cadastro/video';
 import CadastroCategoria from './pages/cadastro/categoria';
+import Page404 from './pages/404';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path="/" component={Home} exact />
       <Route path="/cadastro/video" component={CadastroVideo} />
       <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route component={Page404} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root'),
