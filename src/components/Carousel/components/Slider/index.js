@@ -126,6 +126,23 @@ const Slider = ({ arrowColor, children }) => (
         speed: 800,
         dots: false,
 
+<<<<<<< HEAD
+=======
+const Slider = ({ arrowColor, children }) => (
+  <Container arrowColor={arrowColor}>
+    <SlickSlider
+      {...{
+        infinite: true,
+        autoplay: false,
+        fade: false,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        arrows: true,
+        centerMode: false,
+        speed: 800,
+        dots: false,
+
+>>>>>>> c34848d86df1e0ac61b2c284f4a679ee62a1aaa0
         variableWidth: true,
         adaptiveHeight: true,
 

@@ -21,6 +21,10 @@ export const Title = styled.h3`
   border-bottom-right-radius: 25px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
+<<<<<<< HEAD
+=======
+  /* font-style: normal; */
+>>>>>>> c34848d86df1e0ac61b2c284f4a679ee62a1aaa0
   font-size: 1.75rem;
   font-weight: bold;
   font-family: 'Josefin Sans', sans-serif;

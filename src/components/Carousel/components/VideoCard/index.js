@@ -18,6 +18,7 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       categoryColor={categoryColor}
       target="_blank"
       title={videoTitle}
+      className="card"
     />
   );
 }

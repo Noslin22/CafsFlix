@@ -58,3 +58,40 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.menu-ativo:before {
+  content: '';
+  display: block;
+  z-index: 100;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show-flex {
+  display: flex !important;
+}
+
+#root {
+  --bodyPaddingTop: 94px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: var(--bodyPaddingTop);
+  background: var(--grayDark);
+}
+
+@media (max-width: 800px) {
+  #root {
+    padding-top: var(--MenuPaddingTopMobile);
+  }
+}
