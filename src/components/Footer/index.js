@@ -9,9 +9,7 @@ function Footer() {
         <img src={Logo} alt="Logo Cafs Flix" />
       </a>
       <p>
-        Orgulhosamente criado durante
-        {' '}
-        por
+        Orgulhosamente criado por
         {' '}
         <a href="https://www.instagram.com/jn_pedreira/">
           João Nilson
