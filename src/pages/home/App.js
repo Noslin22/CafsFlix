@@ -25,7 +25,7 @@ function Home() {
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].nome}
                 url={dadosIniciais[0].videos[0].url}
-                videoDescription="Teste pois eu esqueçi"
+                videoDescription="Efésios 1:7"
               />
               <Carousel
                 ignoreFirstVideo
