@@ -24,7 +24,7 @@ function Home() {
             <div key={categoria.id}>
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].nome}
-                url={dadosIniciais[0].videos[0].nome}
+                url={dadosIniciais[0].videos[0].url}
                 videoDescription="Efésios 1:7"
               />
               <Carousel
