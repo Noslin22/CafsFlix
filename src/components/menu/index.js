@@ -7,7 +7,7 @@ import Button from '../Button';
 
 function Menu() {
   const novoVideo = !window.location.pathname.includes('/cadastro/video')
-  && !window.location.pathname.includes('/cadastro/categoria');
+  && !window.location.pathname.includes('/cadastro/categoria') && window.location.pathname.includes('/admin');
 
   return (
     <nav className="Menu">
