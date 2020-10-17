@@ -12,13 +12,13 @@
     },
     {
       "id": 2,
-      "nome": "Back End",
-      "cor": "#00C86F",
+      "nome": "Estevam Nascimento",
+      "cor": "##B20217",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "MELHOR Canal do YouTube",
+        "url": "https://www.youtube.com/user/DbvEstevinho"
       },
-      "descricao": "Cursos de Back End na Alura"
+      "descricao": "MELHOR Canal do YouTube"
     },
     {
       "id": 3,
@@ -95,32 +95,32 @@
     {
       "id": 8,
       "categoriaId": 2,
-      "nome": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+      "nome": "DEVOCIONAL CAFS: O Melhor Professor",
+      "url": "https://www.youtube.com/watch?v=hB3dS_RLokk"
     },
     {
       "id": 9,
       "categoriaId": 2,
-      "nome": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+      "nome": "DEVOCIONAL CAFS: O que você tem na mão ?",
+      "url": "https://www.youtube.com/watch?v=v19phi1hrwo"
     },
     {
       "id": 10,
       "categoriaId": 2,
-      "nome": "Programei 4 robôs que criam vídeos para mim no YouTube",
-      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+      "nome": "DEVOCIONAL CAFS: Nele você pode confiar",
+      "url": "https://www.youtube.com/watch?v=Uz2jGeFyRG4"
     },
     {
       "id": 11,
       "categoriaId": 2,
-      "nome": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+      "nome": "DEVOCIONAL CAFS: Passos para o PERDÃO.",
+      "url": "https://www.youtube.com/watch?v=KgbRp2eGePc"
     },
     {
       "id": 12,
       "categoriaId": 2,
-      "nome": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+      "nome": "DEVOCIONAL CAFS: CONTRATO COM DEUS",
+      "url": "https://www.youtube.com/watch?v=azwWmTBU0BM"
     },
     {
       "id": 13,
