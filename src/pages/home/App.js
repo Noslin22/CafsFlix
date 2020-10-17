@@ -24,7 +24,7 @@ function Home() {
             <div key={categoria.id}>
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].nome}
-                url={dadosIniciais[0].videos[0].url}
+                url={"https://i.ytimg.com/vi/KgbRp2eGePc/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCzogFVcjSuvvmF8yE1QD3aQEPU6Q"}
                 videoDescription="Efésios 1:7"
               />
               <Carousel
