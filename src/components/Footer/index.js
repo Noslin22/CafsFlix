@@ -5,7 +5,7 @@ import Logo from '../../assets/img/logo2.PNG';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
+      <a href="https://cafsflix.vercel.app/">
         <img src={Logo} alt="Logo Cafs Flix" />
       </a>
       <p>
