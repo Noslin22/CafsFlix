@@ -16,7 +16,7 @@ export default function BannerMain({
   url,
 }) {
   const youTubeID = getYouTubeId(url);
-  const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
+  const bgUrl = `https://i.ytimg.com/vi/KgbRp2eGePc/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCzogFVcjSuvvmF8yE1QD3aQEPU6Q`;
 
   return (
     <BannerMainContainer backgroundImage={bgUrl}>
