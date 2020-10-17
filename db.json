@@ -1,16 +1,6 @@
 {
   "categorias": [
     {
-      "id": 2,
-      "nome": "Front End",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      },
-      "descricao": "Formação de Front End na Alura"
-    },
-    {
       "id": 1,
       "nome": "Estevam Nascimento",
       "cor": "##B20217",
@@ -19,6 +9,16 @@
         "url": "https://www.youtube.com/user/DbvEstevinho"
       },
       "descricao": "MELHOR Canal do YouTube"
+    },
+    {
+      "id": 2,
+      "nome": "Front End",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      },
+      "descricao": "Formação de Front End na Alura"
     },
     {
       "id": 3,
@@ -50,6 +50,42 @@
     }
   ],
   "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "nome": "DEVOCIONAL CAFS: CONTRATO COM DEUS",
+      "url": "https://www.youtube.com/watch?v=azwWmTBU0BM"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "nome": "DEVOCIONAL CAFS: O que você tem na mão ?",
+      "url": "https://www.youtube.com/watch?v=v19phi1hrwo"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "nome": "DEVOCIONAL CAFS: Nele você pode confiar",
+      "url": "https://www.youtube.com/watch?v=Uz2jGeFyRG4"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "nome": "DEVOCIONAL CAFS: Passos para o PERDÃO.",
+      "url": "https://www.youtube.com/watch?v=KgbRp2eGePc"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "nome": "DEVOCIONAL CAFS: O Melhor Professor",
+      "url": "https://www.youtube.com/watch?v=hB3dS_RLokk"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "nome": "DEVOCIONAL CAFS: Ouvido Desbloqueado",
+      "url": "https://www.youtube.com/watch?v=uArZkvITXoc"
+    },
     {
       "id": 7,
       "categoriaId": 2,
@@ -91,42 +127,6 @@
       "categoriaId": 2,
       "nome": "Novidades do Angular v9",
       "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-    },
-    {
-      "id": 5,
-      "categoriaId": 1,
-      "nome": "DEVOCIONAL CAFS: O Melhor Professor",
-      "url": "https://www.youtube.com/watch?v=hB3dS_RLokk"
-    },
-    {
-      "id": 2,
-      "categoriaId": 1,
-      "nome": "DEVOCIONAL CAFS: O que você tem na mão ?",
-      "url": "https://www.youtube.com/watch?v=v19phi1hrwo"
-    },
-    {
-      "id": 3,
-      "categoriaId": 1,
-      "nome": "DEVOCIONAL CAFS: Nele você pode confiar",
-      "url": "https://www.youtube.com/watch?v=Uz2jGeFyRG4"
-    },
-    {
-      "id": 4,
-      "categoriaId": 1,
-      "nome": "DEVOCIONAL CAFS: Passos para o PERDÃO.",
-      "url": "https://www.youtube.com/watch?v=KgbRp2eGePc"
-    },
-    {
-      "id": 1,
-      "categoriaId": 1,
-      "nome": "DEVOCIONAL CAFS: CONTRATO COM DEUS",
-      "url": "https://www.youtube.com/watch?v=azwWmTBU0BM"
-    },
-    {
-      "id": 6,
-      "categoriaId": 1,
-      "nome": "DEVOCIONAL CAFS: Ouvido Desbloqueado",
-      "url": "https://www.youtube.com/watch?v=uArZkvITXoc"
     },
     {
       "id": 14,
