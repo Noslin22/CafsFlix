@@ -12,41 +12,43 @@
     },
     {
       "id": 2,
-      "nome": "Front End",
+      "nome": "Series",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Séries do Feliz7Play",
+        "url": "https://www.youtube.com/channel/UC8PS8EsZsWXOQ1YmlJwCaYw"
       },
-      "descricao": "Formação de Front End na Alura"
-    },
-    {
-      "id": 3,
-      "nome": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
-      },
-      "descricao": "Cursos de Data Science na Alura"
+      "descricao": "Series do Feliz7Play"
     },
     {
       "id": 4,
       "nome": "Filmes",
       "cor": "orange",
       "link_extra": {
-        "text": "Filmes Top"
+        "text": "Filmes Top Feliz7Play"
+        "url": "https://www.youtube.com/channel/UC8PS8EsZsWXOQ1YmlJwCaYw"
       },
       "descricao": "Filmes Top"
     },
     {
       "id": 5,
-      "nome": "Games",
+      "nome": "Camelo na Agulha",
       "cor": "red",
       "link_extra": {
-        "text": "Games awesomes"
+        "text": "O segundo Melhor canal"
+        "url": "https://www.youtube.com/channel/UCl5CO6iuUtb0pZDM0Q9CJfA"
       },
-      "descricao": "Games awesomes"
+      "descricao": "O segundo Melhor canal"
+    },
+    {
+      "nome": "Kids",
+      "descricao": "Programas e desenhos para crianças",
+      "link_extra": {
+        "text": "Programas e desenhos para crianças",
+        "url": "https://www.youtube.com/channel/UC8PS8EsZsWXOQ1YmlJwCaYw"
+      },
+      "cor": "#000000",
+      "id": 6
     }
   ],
   "videos": [
