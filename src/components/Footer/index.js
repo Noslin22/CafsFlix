@@ -14,6 +14,10 @@ function Footer() {
         <a href="https://www.instagram.com/jn_pedreira/">
           João Nilson
         </a>
+        {' e '}
+        <a href="https://www.instagram.com/bernard0_bbc/">
+          Bernardo Bispo
+        </a>
       </p>
     </FooterBase>
   );
