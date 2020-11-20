@@ -43,9 +43,10 @@
 "nome": "O Presente de Nick",
 "descricao": "Uma série para os pequenos",
 "link_extra": {
-"text": "Uma série para os pequenos"
+"text": "Uma série para os pequenos",
+  "url": "https://www.youtube.com/watch?v=V_1IZmPlguA&list=PLBlAWz7xVDz2RtZiF7e-sAHKcX50jTCQb"
 },
-"cor": "#000000",
+"cor": "#00B3FF",
 "id": 6
 },
 {
