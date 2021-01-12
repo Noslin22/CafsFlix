@@ -9,7 +9,7 @@ function Page404() {
     <>
       <Menu />
       <Main>
-        <Iframe src="https://editor.p5js.org/Spoiler2204/embed/pajcOMYr-" />
+        <Iframe src="https://editor.p5js.org/Spoiler2204/embed/pajcOMYr-" width="100%" />
       </Main>
       <Footer />
     </>
