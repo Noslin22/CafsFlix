@@ -1,6 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe';
-import { Main } from './styles';
+import Main from './styles';
 import Menu from '../../components/menu';
 import Footer from '../../components/Footer';
 
