@@ -1,19 +1,15 @@
 import React from 'react';
-import { Main, /* Page404Layout, */ ImageContainer, P404Image } from './styles';
+import Iframe from 'react-iframe';
+import { Main } from './styles';
 import Menu from '../../components/menu';
 import Footer from '../../components/Footer';
-import ErrorMsg from './components/ErrorMsg';
-import P404 from '../../assets/img/P404.png';
 
 function Page404() {
   return (
     <>
       <Menu />
       <Main>
-        <ErrorMsg />
-        <ImageContainer>
-          <P404Image src={P404} alt="404" />
-        </ImageContainer>
+        <Iframe src="https://editor.p5js.org/Spoiler2204/embed/pajcOMYr-" />
       </Main>
       <Footer />
     </>
